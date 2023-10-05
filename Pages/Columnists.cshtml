@@ -1,0 +1,101 @@
+﻿@page
+@using AdayRazorProject.Models;
+@model AdayRazorProject.Pages.ColumnistsModel
+@{
+}
+
+<h1>Köşe Yazarları</h1>
+<style>
+		table {
+			border-collapse: collapse;
+			background-color: #fff;
+		}
+
+		table tr, table td, table th {
+			border: 1px solid #bbb;
+			padding: 10px 20px;
+			font-weight: bold;
+		}
+
+		table th {
+			background-color: #167;
+			color: #fff;
+			font-weight: 600;
+		}
+
+		table tbody{
+			font-family: sans-serif;
+		}
+
+
+	form.example input[type=text] {
+		padding: 10px;
+		font-size: 17px;
+		border: 1px solid grey;
+		float: left;
+		width: 80%;
+		background: #f1f1f1;
+	}
+
+	form.example button {
+		float: left;
+		width: 20%;
+		padding: 10px;
+		background: #2196F3;
+		color: white;
+		font-size: 17px;
+		border: 1px solid grey;
+		border-left: none;
+		cursor: pointer;
+	}
+
+	form.example button:hover {
+		background: #0b7dda;
+	}
+
+	form.example::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+</style>
+
+
+<form class="example" method="get" style="margin:left;max-width:300px">
+	<input type="text" placeholder="Arama yap..." name="searchTerm">
+	<button type="submit"><i class="fa fa-search"></i></button>
+	<br />
+	<a href="javascript:void(0);" id="showAll">Tüm Verileri Göster</a>
+</form>
+
+<table>
+	<thead>
+		<tr>
+			<th>
+				Adı
+			</th>
+			<th>
+				Yazısı
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (Columnist columnist in Model.FilteredData)
+		{
+			<tr>
+				<td>
+					@columnist.name
+				</td>
+				<td>
+					@columnist.title
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
+
+<script>
+	document.getElementById("showAll").addEventListener("click", function () {
+		window.location.href = "/Columnists";
+	});
+</script>

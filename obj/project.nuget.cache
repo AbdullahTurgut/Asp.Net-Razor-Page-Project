@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "UoDRMVLbB4s/tM1MtoNfngyuCQZBNlD3JZgkJT5UM8iovacdovby/w+14k8k4yr9k8KOLQGohW64iYmpEKadgQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\cacat\\source\\repos\\AdayRazorProject\\AdayRazorProject\\AdayRazorProject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\cacat\\.nuget\\packages\\elasticsearch.net\\7.17.5\\elasticsearch.net.7.17.5.nupkg.sha512",
+    "C:\\Users\\cacat\\.nuget\\packages\\microsoft.csharp\\4.6.0\\microsoft.csharp.4.6.0.nupkg.sha512",
+    "C:\\Users\\cacat\\.nuget\\packages\\nest\\7.17.5\\nest.7.17.5.nupkg.sha512",
+    "C:\\Users\\cacat\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\cacat\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0\\system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
