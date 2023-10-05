@@ -28,8 +28,8 @@ namespace AdayRazorProject.Pages
 
         public ISearchResponse<Columnist> GetResponse()
         {
-            var settings = new ConnectionSettings(new Uri("http://localhost:9200"))
-                            .DefaultIndex("crawling_data");
+            var settings = new ConnectionSettings(new Uri("your-localhost:9200"))
+                            .DefaultIndex("your-field-name");
 
             var client = new ElasticClient(settings);
 
